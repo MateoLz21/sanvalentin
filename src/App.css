@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor{
+  background-image: url("./src/assets/fondo.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF2C8;
+  border-radius: 20px;
+  max-width: 400px;
+  max-height: 400px;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta h2{
+  color: #CA0229;
+  font-family: "Nunito", serif;
+  font-style: normal;
+}
+
+.tarjeta h3{
+  color: #CA0229;
+
+  font-family: "Gloria Hallelujah", serif;
+  font-weight: 700;
+}
+
+.tarjeta h4{
+  color: #CA0229;
+  font-family: "Nunito", serif;
+  font-style: normal;
+}
+
+.tarjeta p{
+  color: #000000;
+  font-family: "Nunito", serif;
+  font-style: normal;
+}
+
+
+.tarjeta img{
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  gap:10px
+}
+
+.boton{
+  margin: 20px 5px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #D8E5F4;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition:  0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.boton_si:hover{
+  background-color: #CA0229;
+  color: white;
+  font-size: 15px;
+  transform: scale(1.5);
+}
+
+.boton_no:hover{
+  background-color: #79113A;
+  color: white;
+  transform: scale(1.1);
+  font-size: 10px;
+}
